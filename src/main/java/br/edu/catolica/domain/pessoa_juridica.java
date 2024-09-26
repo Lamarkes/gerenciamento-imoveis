@@ -13,7 +13,7 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class pessoa_juridica {
+public class pessoa_juridica extends Propietario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

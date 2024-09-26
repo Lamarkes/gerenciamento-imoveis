@@ -31,5 +31,4 @@ public class Cliente {
     @OneToMany(cascade = CascadeType.ALL)
     private List<Contato> contato;
 
-
 }

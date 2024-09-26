@@ -13,24 +13,21 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class pessoa_fisica extends Propietario {
+public class contrato_aluguel extends Contrato {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String cpf;
+    private Date data_inicio;
 
-    private String nome;
-
-    private String sexo;
-
-    private String profisao;
-
-    private Date data_nascimento;
+    private Date data_fim;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_propietario")
-    Propietario propietario;
+    @JoinColumn(name = "contrato_id")
+    private Contrato contrato;
+
+
+
 
 }
