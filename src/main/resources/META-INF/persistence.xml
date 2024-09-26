@@ -12,7 +12,7 @@
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/imoveis" />
             <property name="javax.persistence.jdbc.user" value="root" />
-            <property name="javax.persistence.jdbc.password" value="262031"/>
+            <property name="javax.persistence.jdbc.password" value="root"/>
 
             <!-- Configurações específicas do Hibernate -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />

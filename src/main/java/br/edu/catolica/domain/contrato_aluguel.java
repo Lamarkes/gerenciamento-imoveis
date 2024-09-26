@@ -9,11 +9,10 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class contrato_aluguel extends Contrato {
+public class contrato_aluguel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
