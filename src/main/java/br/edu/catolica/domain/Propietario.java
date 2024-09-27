@@ -14,11 +14,16 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@NamedQueries(
+        @NamedQuery(name = "proprietario.ImoveisDisponiveis", query = "SELECT p, COUNT(i) FROM Propietario p JOIN p.imoveis i WHERE i.estaAvenda = true GROUP BY p.id, p.nome ORDER BY count(i)")
+)
 public class Propietario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    private String nome;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "endereco_id")

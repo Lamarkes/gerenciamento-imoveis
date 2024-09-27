@@ -13,6 +13,9 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@NamedQueries(
+        @NamedQuery(name = "corretor.CorretorMaisContratos", query = "SELECT c.corretor.nome, count(c.id) FROM Contrato c GROUP BY c.corretor.id ORDER BY c.corretor.id")
+)
 public class Corretor {
 
     @Id
