@@ -13,6 +13,7 @@ public class App {
     public static void main(String[] args) {
 
 
+
         var corretorDAO = new CorretorDAO();
         var corretor1 = Corretor.builder()
                 .nome("Lamark")
@@ -165,4 +166,5 @@ public class App {
 
 
           }
-}
+
+    }
